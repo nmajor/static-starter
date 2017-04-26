@@ -1,0 +1,30 @@
+.social {
+  font-size: 25px;
+
+  a {
+    text-decoration: none;
+    color: $loud-color;
+    margin-right: 2px;
+
+    &.email {
+      color: inherit;
+    }
+
+    &:active {
+      text-decoration: none;
+    }
+
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: darken($loud-color, 5%);
+    }
+
+    .icon-linkedin {
+      margin-left: 1px;
+    }
+  }
+}

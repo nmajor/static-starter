@@ -1,0 +1,31 @@
+#content-body {
+  padding: 30px;
+  transition: visibility 1.5s, opacity 1.5s linear;
+  max-width: 500px;
+
+  h3 {
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  p {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+  }
+
+  &.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0s linear;
+  }
+}
+
+@media (min-width:961px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+  #content-body {
+    h3 {
+      font-size: 80px;
+    }
+  }
+}
